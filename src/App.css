@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* ----------------------------------------------------
+    Root
+---------------------------------------------------- */
+:root {
+  --border-color-11: #ededed;
+  --ltn__secondary-color: #205BF5;
+}
+
+/* ----------------------------------------------------
+    Pagination
+---------------------------------------------------- */
+/* ltn__pagination-3 */
+.ltn__pagination ul {
+  margin: 0;
+  padding: 0;
+}
+
+.ltn__pagination ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.ltn__pagination ul li:last-child {
+  margin-right: 0px;
+}
+
+.ltn__pagination ul li a {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  border: 0px solid var(--border-color-11);
+  text-align: center;
+  display: block;
+  font-weight: 700;
+  border-radius: 100%;
+  color: var(--ltn__color-1);
+}
+
+.ltn__pagination ul li:hover a,
+.ltn__pagination ul li.active a {
+  background-color: var(--ltn__secondary-color);
+  border-color: var(--ltn__secondary-color);
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .ltn__pagination ul li {
+    margin-right: 5px;
+    font-size: 14px;
+  }
+
+  .ltn__pagination ul li a {
+    height: 40px;
+    width: 40px;
+    line-height: 36px;
+  }
+}
